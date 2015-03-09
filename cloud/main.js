@@ -10,6 +10,9 @@ var msign=require('cloud/msign.js');
 var mqiniu=require('cloud/mqiniu');
 var mchat=require('cloud/mchat');
 
+AV.Cloud.define('hello', function(request, response) {
+  response.success('Hello world!');
+
 AV.Cloud.define("addFriend", muser.handleAddFriend);
 AV.Cloud.define("removeFriend", muser.handleRemoveFriend);
 
